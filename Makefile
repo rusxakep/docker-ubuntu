@@ -1,0 +1,4 @@
+VERSION=14.04
+
+build:
+	VERSION=$(VERSION) make -C $(VERSION)/

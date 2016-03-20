@@ -2,15 +2,11 @@ language: bash
 services: docker
 
 env:
-  - VERSION=14.04.4
+  - VERSION=14.04
 
 before_script:
   - env | sort
   - cd "$VERSION"
-  - image="aggr/ubuntu:$VERSION"
-
+  
 script:
-  - docker build -t "$image" .
-
-after_script:
-  - docker images
+  - make
