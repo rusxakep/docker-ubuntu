@@ -1,5 +1,5 @@
 language: bash
-service: docker
+services: docker
 
 env:
   - VERSION=14.04
