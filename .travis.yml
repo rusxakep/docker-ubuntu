@@ -3,10 +3,6 @@ services: docker
 
 env:
   - VERSION=14.04
-
-before_script:
-  - env | sort
-  - cd "$VERSION"
-  
+ 
 script:
-  - make
+  - make -C $(VERSION)/
