@@ -1,7 +1,8 @@
 language: bash
+service: docker
 
 env:
   - VERSION=14.04
 
 script:
-  - make -C $VERSION/
+  - make
