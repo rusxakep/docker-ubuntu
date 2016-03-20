@@ -3,6 +3,12 @@ service: docker
 
 env:
   - VERSION=14.04
+  
+before_script:
+  - env | sort
+  - cd "$VERSION"
+  - image="aggr/ubuntu:$VERSION"
 
 script:
-  - make
+  - docker build -t "$image" .
+
