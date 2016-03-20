@@ -2,8 +2,8 @@ language: bash
 services: docker
 
 env:
-  - VERSION=14.04.4
-
+  - VERSION=14.04
+  
 before_script:
   - env | sort
   - cd "$VERSION"
@@ -11,3 +11,7 @@ before_script:
 
 script:
   - docker build -t "$image" .
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/master
