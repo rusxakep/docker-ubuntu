@@ -1,4 +1,4 @@
-FROM ubuntu:trusty-20160315
+FROM ubuntu:trusty
 MAINTAINER Mikhail Baykov <mike@baikov.com>
 
 RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends \
